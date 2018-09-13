@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>ChatRooms</title>
+</head>
+<body>
+        <table id = "ExstChats">
+            <thead><tr><td>Chats</td></tr></thead>
+            <tbody></tbody>
+        </table>
+        <textarea id="history" readonly style="width: 500px; height: 550px"></textarea>
+
+    <p><button id="newChat" onclick=buttonHandler("addChat")>Add Chat</button></p>
+
+    <p><button id = "usrToExstChat" onclick=buttonHandler("addUser")>Add User</button></p>
+
+        <p><button id="ban" onclick=buttonHandler("ban")>BAN</button></p>
+
+        <p><button id = "deban" onclick=buttonHandler("deban")>deBAN</button></p>
+
+        <p><button id = "delete" onclick=buttonHandler("delete")>DELETE</button></p>
+
+        <input id = "adminField" type="text" size="20" placeholder="admin field">
+
+    <p><button id = "lgn" onclick=buttonHandler("login")>LOGIN</button></p>
+
+    <p><button id="signUp" onclick=buttonHandler("register")>REGISTER</button></p>
+
+    <p><button id ="sndMsg" onclick=buttonHandler("send")>SEND</button></p>
+
+    <input id= "msg" type="text" size="48" placeholder="Enter your text...">
+
+    <input id = "pswrd_fld" type="text" size="20" placeholder="password">
+
+    <input id = "lgn_fld" type="text" size = "20" placeholder="login">
+
+    <input id = "chatName_txt" type="text" size="20" placeholder="Chat_Name">
+
+<script src="ClientController.js"></script>
+</body>
+</html>
